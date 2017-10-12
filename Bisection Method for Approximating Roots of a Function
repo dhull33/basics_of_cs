@@ -41,6 +41,8 @@ Use the bisection method to find an approximate root  xr
 Hint: Use  abs to compute the absolute value of a number, e.g. y = abs(x) assigns the absolute value of x to y.
 
 
+###using a "for" loop###
+
 
 def fun (x):
     f = (x**3) - (6*x**2) + (4*x) + (12)
@@ -62,3 +64,32 @@ for i in range(15):
     else:
         x_0 = x_mid
     print(i, x_mid, f_mid)
+    
+    
+###using a while loop###
+
+def fun (x):
+    f = (x**3) - (6*x**2) + (4*x) + (12)
+    return(f)
+()
+
+tolerance = 1.0e-6
+error = tolerance + 1 
+
+x_0 = 3
+x_1 = 6
+counter = 0
+
+while error > tolerance:
+    x_mid = (x_0 + x_1) / 2 
+    f_0 = fun(x_0)
+    f_mid = fun(x_mid)
+    
+    if (f_0*f_mid) < 0.0:
+        x_1 = x_mid
+    else: 
+        x_0 = x_mid
+    
+    error = abs(f_mid)
+    counter += 1
+    print(counter, x_mid, f_mid)
