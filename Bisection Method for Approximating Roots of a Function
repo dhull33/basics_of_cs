@@ -1,0 +1,64 @@
+Bisection is an iterative method for approximating roots of a function. Say we know that the function  f(x)
+  has one root between  x0
+  and  x1
+  ( x0<x1
+ ). We then:
+Evaluate  f
+  at the midpoint  xmid=(x0+x1)/2
+ , i.e. compute  fmid=f(xmid)
+ 
+Evaluate  f(x0)⋅f(xmid)
+ 
+If  f(x0)⋅f(xmid)<0
+ :
+f
+  must change sign somewhere between  x0
+  and  xmid
+ , hence the root must lie between  x0
+  and  xmid
+ , so set  x1=xmid
+ .
+Else
+f
+  must change sign somewhere between  xmid
+  and  x1
+ , so set  x0=xmid
+ .
+The above steps can be repeated a specified number of times, or until  |fmid|
+  is below a tolerance, with  xmid
+  being the approximate root.
+Task: The function
+f(x)=x3−6x2+4x+12
+ 
+has one root somewhere between  x0=3
+  and  x1=6
+ .
+Use the bisection method to find an approximate root  xr
+  using 15 iterations (use a for loop).
+Use the bisection method to find an approximate root  xr
+  such that  ||f(xr)||<1×10−6
+  and report the number of iterations required (use a while loop).
+Hint: Use  abs to compute the absolute value of a number, e.g. y = abs(x) assigns the absolute value of x to y.
+
+
+
+def fun (x):
+    f = (x**3) - (6*x**2) + (4*x) + (12)
+    return(f)
+()
+    
+
+x_0 = 3
+x_1 = 6
+
+
+for i in range(15): 
+    x_mid = (x_0 + x_1)/2
+    f_0 = fun(x_0)
+    f_mid = fun(x_mid)
+    
+    if (f_0*f_mid) < 0.0:
+        x_1 = x_mid
+    else:
+        x_0 = x_mid
+    print(i, x_mid, f_mid)
