@@ -1,2 +1,2 @@
 # basics_of_cs
-Basic Python Algorithms 
+This is intended as a way for me to track my learning. 
