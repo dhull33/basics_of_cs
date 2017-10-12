@@ -1,0 +1,31 @@
+#Consider the following assessment criteria which map a score out of 100 to an assessment grade:
+#Grade	Raw score (/100)
+
+#Excellent	 ≥82
+#Very good	 ≥76.5 and  <82
+#Good	 ≥66 a nd  <76.5
+#Need improvement	 ≥44 and  <66
+#Did you try?	 <45
+ 
+#Write a program that asks for the input score and prints the appropriate grade. Print an error message if the input score is #greater than 100 or less than zero.
+#Recall that
+  # Get input from user
+    #number = float(input('How many seconds in one minute? '))
+    #can be used for interactive input. 
+    
+    
+    
+ grade = float(input("What was your grade? "))
+
+if grade >= 45 and grade < 66:
+    print("Need Improvement")
+elif grade >=66 and grade < 76.5: 
+    print("Good")
+elif grade >= 76.5 and grade < 82:
+    print("Very Good")
+elif grade >= 82 and grade <=100:
+    print("Excellent")
+elif grade > 100:
+    print("Error")
+else:
+    print("Did you try?")
