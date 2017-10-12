@@ -1,0 +1,101 @@
+### Bits and Bytes ###
+  -Bits
+    --computer memory is made up of bits and  each bit can take on one of two values - 0 or 1. 
+    --A bit is the smallest buliding block of memory
+  
+  -Bytes
+    --bytes are "chunks" of bits
+    --one byte is made up of 8 bits. 
+    
+ ###Check the type of a variable in Python###
+ 
+  #input#
+      x = True
+      print(type(x))
+
+      a = 1
+      print(type(a))
+    
+      a = 1.0
+      print(type(a))
+      
+ #output#
+  <class 'bool'>
+  <class 'int'>
+  <class 'float'>
+  
+  
+ ### BOOLEANS ###
+    -- have only two values - TRUE or FALSE
+
+
+### Strings ###
+  -- a string is a collection of characters
+  --to create a string we use single or double quotes around a word/sentence/paragraph
+  
+          my_string = 'This is a string.'
+          
+        or
+        
+         my_string = "This is a string."
+         
+         
+  Below we assign a string to a variable, display the string, and then check its type:
+    #input#
+      my_string = "This is a string."
+      print(my_string)
+      print(type(my_string))
+
+    #output##
+      This is a string.
+      <class 'str'>
+
+
+We can perform many different operations on strings. We can extract a particular character as a new string:
+
+#input#
+# Get 3rd character (Python counts from zero)
+    s2 = my_string[2]
+    print(s2)
+    print(type(s2))
+
+#output##
+    i
+    <class 'str'>
+
+or extract a range of characters:
+
+    #input#
+      # Get first six characters, print and check type
+      s3 = my_string[0:6]
+      print(s3)
+      print(type(s2))
+
+      # Get last four characters and print
+      s3 = my_string[-4:]
+      print(s3)
+
+      #output##
+          This i
+          <class 'str'>
+          ing.
+          
+          
+We can add strings together:
+      
+      #input#
+      introduction = "My name is:"
+      name = "Joe"
+
+      personal_introduction = introduction + " " + name
+      print(personal_introduction)
+      
+      #output##
+      My name is: Joe
+      
+We can also check the length (number of characters) of a string using len:
+
+
+print(len(personal_introduction))
+15
+
