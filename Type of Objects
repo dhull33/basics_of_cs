@@ -99,3 +99,112 @@ We can also check the length (number of characters) of a string using len:
 print(len(personal_introduction))
 15
 
+
+###Numeric Types###
+
+Python has three native numerical types
+  1. Integers (int)
+      -- are whole numbers and can be positive or negative
+      -- should only be used when a value can take on a whole number such as the year,
+         number of students etc. 
+      -- python will infer an int if we assign a number with no decimal place
+      -- when we add a decimal point the variable type becomes a float
+      -- python dynamically changes the number of bits used to store an integer so that "integer overflow"
+         is avoided
+         ## to check the number of bits an integer is using use the 'bit_length()' function
+              a = 8 
+              print(type(a))
+              print(a.bit_length())
+              
+              ##### NOTE ####
+                'bit_length()' does not work if the integer (a) is used inside the parantheses like 'bit_length(a)'
+         
+              
+              
+  2. Floating Point Numbers (float)
+     --These are numbers with a decimal point such as 2.3, 2.0, 12734859.47248328, etc. 
+     --Most engineering calculations invlove numbers that cannot be represented as integers 
+     --Numbers with a decimal point are stored using the 'float' type
+     --computers store floating point numbers by storing the 'sign', 'significand (also known as the 'mantissa')',
+       and the 'exponent.' For example, lets consider the number 10.45:
+       
+          i. since 10.45 is positive the sign will be '+'
+          ii.the significand is 1045
+          iii. and the exponent is 10**-2
+          
+          So 10.45 = + 1045 * 10**-2
+      
+      --python uses 64 bits to store a 'float' and as a result a floating point number is generally 
+        precise to 15-17 significant figures
+      
+      --we declare a float by adding a decimal point to our number or be using 'e' or 'E' (they both mean the same thing)
+ 
+  3. Complex Numbers (complex)
+    --complex numbers are a combination between a real number and an imaginary number and take the form:
+          R + R*i
+            where R is any real number and i is an imaginary number
+   
+   --we declare a complex number in Pytjon by adding 'j' or 'J' after the complex part of a number
+   --For example:
+        a = 2j
+        print(a, type(a))
+
+        b = 4 - 3j
+        print(b, type(b))
+        
+    --the usual mathematical operations such as addition, subtraction, multiplication, and divsion, can all be
+      performed on complex numbers. 
+   --the real and imaginary parts can be extracted:
+        print(b.img)
+        print(b.real)
+        
+     and the complex comjugate can be taken as well:
+        print(b.conjugate())
+        
+        output:
+        (4+3j)
+        
+    --to compute the modulus of a complex number we use the 'abs' function
+          --more generally the 'abs' function returns the absolute value of a number
+          
+       print(abs(b))
+       
+       output:
+       5.0
+ 
+ ##### Type Conversions (casting) ####
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
