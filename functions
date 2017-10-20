@@ -1,0 +1,27 @@
+#### Structure of a Function ####
+
+
+
+1. A function is declared using "def" followed by the name of the function (you can call it anything), which is then followed
+   by the list of arguments you want the function to have and then its ended with a colon. For example:
+      
+                def main(x, y, z): 
+              
+            This creates a function called "main" and has to be given the three variables x, y, z, in order
+            to run. Otherwise you will get an error term.
+            
+2. After 1, the body of the function comes next. The body of the function is the meat and potatoes of the function if you      
+   if you will. It is the operations you want to run. For exaple if you wanted to add two integers together we would use                
+   something like this: "return a + b" , where a and b are integers. 
+
+
+3. So putting it all together we have: 
+        
+        def add_2ints (a, b):
+            return a + b
+
+
+#### Purpose of Functions  ####
+Functions allow computer code to be re-used multiple times with different input data. It is good to re-use code as much as possible because we then focus testing and debugging efforts, and maybe also optimisations, on small pieces of code that are then re-used. The more code that is written, the less frequently sections of code are used, and as a consequence the greater the likelihood of errors.
+Functions can also enhance the readability of a program, and make it easier to collaborate with others. Functions allow us to focus on what a program does at a high level rather than the details of how it does it. Low-level implementation details are encapsulated in functions. To understand at a high level what a program does, we usually just need to know what data is passed into a function and what the function returns. It is not necessary to know the precise details of how a function is implemented to grasp the structure of a program and how it works. For example, we might need to know that a function computes and returns  sin(x)
+ ; we don't usually need to know how it computes sine.
