@@ -29,6 +29,8 @@ The above steps can be repeated a specified number of times, or until  |fmid|
   being the approximate root.
 Task: The function
 f(x)=x3−6x2+4x+12
+
+d
  
 has one root somewhere between  x0=3
   and  x1=6
