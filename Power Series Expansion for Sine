@@ -63,3 +63,5 @@ print(error)
 
 print("Number of terms in series:")
 print(i)
+
+k
